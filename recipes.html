@@ -1,30 +1,40 @@
 <!DOCTYPE html>
+
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="images/recipes_favicon.ico">
+    <link rel="icon" type="image/png" href="images/recipes_favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
     <title>Recipes</title>
-</head>
+  </head>
+
 <body>
+    <div class="skip"><a href="#main">Skip to Main Content</a></div>
     <header>
-        <a href = "">Skip to Main Content</a>
         <nav>
 			<ul>
 				<li><a href = "index.html" >Pets</a></li>
 				<li><a href = "travel.html">Travel</a></li>
-				<li><a href = "recipes.html">Recipes</a></li>
+				<li class="active"><a href = "recipes.html">Recipes</a></li>
 			</ul>
 		</nav>
-        <h1>Comfort Food from South India!</h1>
     </header>
-    <main>
-        <p>On a hard day, when I miss home, I crave something that brings home a tad bit closer to me. I can’t really hop on a 2k flight every time I miss home, so I turn to the kitchen instead and do my best to replicate my mom’s cooking. Indian food is characterized by its diverse and vibrant culinary traditions, varying significantly across the regions of India. In my completely biased opinion, South-Indian food takes a niche spot with its bold and intricate use of a wide array of spices and flavors and a generous use of local ingredients to create rich and flavorful dishes. South Indian comfort food offers a satisfying and soulful culinary experience. My top 5 go-to's are listed below:</p>
+
+    <main class="grid" id="main">
+        <div class="introduction">
+        <img src="images/recipes/hero.png" alt="A vector illustration of South Indian Food">
+        <h1>Comfort Food from South India!</h1>
+        <p>On a hard day, when I miss home, I crave something that brings home a tad bit closer to me. I can’t really hop on a 2k flight every time I miss home, so I turn to the kitchen instead and do my best to replicate my mom’s cooking. <br><br>Indian food is characterized by its diverse and vibrant culinary traditions, varying significantly across the regions of India. In my completely biased opinion, South-Indian food takes a niche spot with its bold and intricate use of a wide array of spices and flavors and a generous use of local ingredients to create rich and flavorful dishes. South Indian comfort food offers a satisfying and soulful culinary experience. My top 5 go-to's are listed below:</p>
+        </div>
         
-        <div>
+        <div class="section1">
         <h2>Biryani</h2>
+        <div class="section1-image" id="Biryani-image">
+        <img src="images/recipes/hyderabadbiryani.jpg" width="250" alt="Hyderabadi Biryani with Raita">
+        </div>
         <p>Biryani is a rich and aromatic rice dish that is a staple in Indian cuisine. It features layered rice infused with a blend of spices, and it includes meat (like chicken, lamb, or beef) or vegetables. Traditionally, it is garnished with fried onions, raisins, and boiled eggs. It is renowned for its complex flavors, vibrant colors, and aromatic spices.</p>
-        <img src="images/recipes_hyderabadbiryani.jpg" width="250" alt="Hyderabadi Biryani with Raita">
         <h3>Ingredients:</h3>
         <ul>
         <li>For the Rice:
@@ -101,7 +111,9 @@
                 </ol>
             </li>
         </ol>
-        <h3> Advisory Information</h3>
+        <div class="advisoryInformation">
+        <h3>Advisory Information</h3>
+        </div>
         <ol>
             <li>Marination Time: The longer you marinate the meat, the more flavorful it will be.</li>
             <li>Rice Cooking: Be careful not to overcook the rice during the initial cooking phase; it should only be 70-80% cooked as it will cook further when assembling the biryani.</li>
@@ -111,10 +123,12 @@
         </ol>  
         </div>
 
-        <div>
-        <h2>Dosa</h2>
+        <div class="section2">
+        <h2>#2 Dosa</h2>
+        <div class="section1-image" id="Dosa-image">
+        <img src="images/recipes/dosa.jpg" width="250" alt="Dosa with chutney, sambar and podi">
+        </div>
         <p>Dosa is a South Indian staple often enjoyed for breakfast or dinner. It is a crispy, thin pancake made from a fermented batter of rice and urad dal (black gram). Traditionally paired with coconut chutney, sambar, or a variety of spicy and tangy condiments, it is known for its simple yet fulfilling and aromatic flavors.</p>
-        <img src="images/recipes_dosa.jpg" width="250" alt="Dosa with chutney, sambar and podi">
         <h3>Ingredients:</h3>
             <ul>
             <li>For the Dosa Batter:
@@ -173,10 +187,13 @@
             </ol>
         </div>
 
-        <div>
-            <h2>Pappu Annam (Dal Rice)</h2>
-            <p>"Pappu Annam" is a traditional South Indian dish, essentially a combination of rice and dal (lentils), which is both nourishing and comforting. It is a straightforward dish to prepare, using basic ingredients yet offering a wholesome meal, rich in proteins and fiber. It is generally paired with a variety of pickles, papad, or a simple vegetable stir-fry.</p>
-            <img src="images/recipes_dalrice.jpg" width="250" alt="Dal Rice served in a ceramic bowl">
+        <div class="section3">
+        <h2>#3 Pappu Annam (Dal Rice)</h2>
+        <div class="section1-image" id="PappuAnnam-image">
+        <img src="images/recipes/dalrice.jpg" width="250" alt="Dal Rice served in a ceramic bowl">
+        </div>
+        <p>"Pappu Annam" is a traditional South Indian dish, essentially a combination of rice and dal (lentils), which is both nourishing and comforting. It is a straightforward dish to prepare, using basic ingredients yet offering a wholesome meal, rich in proteins and fiber. It is generally paired with a variety of pickles, papad, or a simple vegetable stir-fry.</p>
+            
             <h3>Ingredients:</h3>
             <ul>
             <li>For the Pappu Annam:
@@ -239,10 +256,12 @@
             </ol>
         </div>
 
-        <div>
-            <h2>Annam Paramannam</h2>
-            <p>"Annam Paramannam" is a traditional South Indian dessert made primarily from rice and milk, sweetened with jaggery or sugar. This rice pudding is flavored with cardamom and often garnished with fried cashews and raisins. It is a staple in festive occasions and religious ceremonies, embodying the richness of Indian culinary traditions in a sweet dish.</p>
-            <img src="images/recipes_annamparamannam.jpg" width="250" alt="Sweet Rice Pongal served in a traditional mud pot">
+        <div class="section4">
+        <h2>#4 Annam Paramannam</h2>
+        <div class="section4-image" id="AnnamParamannam-image">
+        <img src="images/recipes/annamparamannam.jpg" width="250" alt="Sweet Rice Pongal served in a traditional mud pot">
+        </div>
+        <p>"Annam Paramannam" is a traditional South Indian dessert made primarily from rice and milk, sweetened with jaggery or sugar. This rice pudding is flavored with cardamom and often garnished with fried cashews and raisins. It is a staple in festive occasions and religious ceremonies, embodying the richness of Indian culinary traditions in a sweet dish.</p>
             <h3>Ingredients:</h3>
             <ul>
             <li>For the Annam Paramannam:
@@ -307,10 +326,12 @@
             </ol>
         </div>
 
-        <div>
-            <h2>Aavakayi Pacchadi</h2>
-            <p>Avakayi Pacchadi is a traditional Andhra style pickle made using raw mangoes. It is renowned for its fiery spiciness, combined with the tartness of raw mangoes, and enhanced with a variety of spices. This pickle, with its bold and robust flavors, is a staple in many South Indian households, accompanying a wide range of dishes and adding a zesty touch to the meal.</p>
-            <img src="images/recipes_aavakayipacchadi.jpg" width="250" alt="Mango Pickle served in a cermaic bowl">
+        <div class="section5">
+        <h2>#5 Aavakayi Pacchadi</h2>
+        <div class="section5-image" id="AavakayiPacchadi-image">
+        <img src="images/recipes/aavakayipacchadi.jpg" width="250" alt="Mango Pickle served in a cermaic bowl">
+        </div>
+        <p>Avakayi Pacchadi is a traditional Andhra style pickle made using raw mangoes. It is renowned for its fiery spiciness, combined with the tartness of raw mangoes, and enhanced with a variety of spices. This pickle, with its bold and robust flavors, is a staple in many South Indian households, accompanying a wide range of dishes and adding a zesty touch to the meal.</p>
             <h3>Ingredients:</h3>
             <ul>
             <li>For Avakayi Pacchadi:

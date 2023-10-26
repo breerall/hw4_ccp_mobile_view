@@ -41,6 +41,7 @@ nav a{
    color: #FFE4C4;
    background-color: black;
    padding: 10px 24px 10px 24px;
+   justify-content: space-around;
    border: 2px solid black;
    border-radius: 0px;
    text-decoration: none;
@@ -65,9 +66,10 @@ nav .active a{
 
 /*Body Styling*/
 body{
-   margin:0px;
+   margin-left:2.5%;
+   margin-right:2.5%;
    padding:5px;
-   line-height:1.15;
+   font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 
@@ -92,6 +94,7 @@ p{
    font-size: 18px;
    text-align: justify;
    color: #050503;
+   margin-bottom: 20px;
 }
 h2{
    text-align: left;
@@ -99,7 +102,12 @@ h2{
    color:#050503;
    font-weight: 700;
 }
-
+h3{
+   text-align: left;
+   font-size: 20px;
+   color:#050503;
+   font-weight: 700;
+}
 
 /*Grid Styling*/
 .grid{
@@ -122,24 +130,24 @@ h2{
    grid-column-start: 1;
    grid-column-end: span 2;
 }
-.cats, .dogs, .parrots, .hamsters, .rabbits{
+.section1, .section2, .section3, .section4, .section5{
    grid-column: 1/span 2;
    justify-content: center;
    align-items: center;
 }
-.dogs{
+.section1{
    grid-row: 2/span 1;
 }
-.cats{
+.section2{
    grid-row: 3/span 1;
 }
-.parrots{
+.section3{
    grid-row: 4/span 1;
 }
-.rabbits{
+.section4{
    grid-row: 5/span 1;
 }
-.hamsters{
+.section5{
    grid-row: 6/span 1;
 }
 .introduction img{
@@ -151,7 +159,7 @@ h2{
    margin-right: auto;
    width: 100%;
 }
-.cats img, .dogs img, .parrots img, .rabbits img, .hamsters img{
+.section1 img, .section2 img, .section3 img, .section4 img, .section5 img{
    max-height: auto;
    align-items: center;
    border-radius: 20px;
@@ -160,7 +168,7 @@ h2{
    margin-right: auto;
    width: 100%;
 }
-.rabbit-description, .cats-description, .dogs-description, .parrots-description, .hamster-description {
+.section1-description, .section2-description, .section3-description, .section4-description, .section5-description {
    padding: 30px;
    border-radius: 50px 0px 10px 10px;
    background-color: #EFCBAB;
@@ -170,6 +178,62 @@ h2{
 }
 
 
+/*List Styling*/
+
+ol {
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-size: 18px;
+   color: #050503;
+   margin-top: 15px;
+   margin-bottom: 15px;
+   padding-left: 30px; /* This provides some indentation for the list*/
+   list-style-type: decimal;
+}
+li {
+   font-weight: 400;
+   line-height: 1.5;
+   margin-bottom: 8px; /* This gives a slight gap between list items for better readability*/
+   text-align: justify;
+   list-style-type:lower-roman;
+   margin-left: 3.5%;
+   margin-right: 3.5%;
+}
+
+/*Travel Styling*/
+
+.venue-description{
+   padding: 30px;
+   border-radius: 50px 50px 10px 10px;
+   background: linear-gradient(180deg, #13111E 0%, #16253C 118.99%);
+   z-index: 1;
+   position: relative;
+   top: -75px;
+}
+.venue-description h2 {
+   color: #C3D3E2;
+   text-align: left;
+   font-size: 24px;
+   font-weight: 700;
+}
+
+.venue-description h3{
+   text-align: left;
+   font-size: 20px;
+   color:#C3D3E2;
+   font-weight: 700;
+}
+
+.venue-description p{
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-weight: 400;
+   line-height: 1.5;
+   font-size: 18px;
+   text-align: justify;
+   color: #C3D3E2;
+}
+
+
+
 /*Footer Styling*/
 footer {
    margin: 0px;
@@ -177,7 +241,6 @@ footer {
    padding: 20px;
    text-align: center;
 }
-
 footer p{
    color: #FFF;
    text-align: center;
@@ -187,8 +250,9 @@ footer p{
    line-height: normal;
 }
 
-/* @media (min-width: 800px) {
-   Step 9: Write the selector/rule property to style the nav element
+/*
+@media (min-width: 800px) {
+Step 9: Write the selector/rule property to style the nav element
    nav {
      text-align: right;
      padding: 30px 0px 30px 0px;
@@ -212,7 +276,7 @@ footer p{
   .about-image,
   .clients-image {
     grid-column: 2 / span 2;
-  } */
+  }
 
   .text-block {
    max-height: 250px;
