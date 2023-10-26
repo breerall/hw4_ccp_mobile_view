@@ -1,0 +1,304 @@
+/*Basic Styling*/
+html{
+   scroll-behavior: smooth;
+ }
+
+
+/*Styling Skip to Main Content */
+.skip a{
+   background: #FFE4C4;
+   left: 0;
+   padding: 6px;
+   -webkit-transition: top 1s ease-out;
+   transition: top 1s ease-out;
+   z-index: 1;
+ }
+.skip a {
+   position: absolute;
+   top: -40px;
+ }
+.skip a:focus {
+   top: 20px;
+   left: 20px;
+ }
+
+
+/*Styling Navigation*/
+nav {
+   margin: 0px;
+   background-color: #000000;
+   padding: 25px 0;
+   text-align: right;
+}
+nav li{
+   color: #FFE4C4;
+   background-color: black;
+   font-weight: bold;
+   padding: 10px 10px;
+   display: inline-block;
+}
+nav a{
+   color: #FFE4C4;
+   background-color: black;
+   padding: 10px 24px 10px 24px;
+   justify-content: space-around;
+   border: 2px solid black;
+   border-radius: 0px;
+   text-decoration: none;
+}
+nav a:hover, nav a:focus{
+   color: #000000;
+   background-color: #FFE4C4;
+   font-weight: bold;
+   text-decoration: none;
+   border: 2px solid #C7601B;
+   border-radius: 4px;
+}
+nav .active a{
+   color: #000000;
+   background-color: #FFE4C4;
+   font-weight: bold;
+   text-decoration: none;
+   border: 2px solid #C7601B;
+   border-radius: 4px;
+}
+
+
+/*Body Styling*/
+body{
+   margin-left:2.5%;
+   margin-right:2.5%;
+   padding:5px;
+   font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+
+/*Font Styling*/
+h1, h2, h3{
+   font-family:Georgia, 'Times New Roman', Times, serif;
+   margin-top: 15px;
+   margin-bottom: 15px;
+   line-height: 1.5;
+}
+h1{
+   text-align: center;
+   font-size: 30px;
+   color: #2E3552;
+   font-weight: 700;
+
+}
+p{
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-weight: 400;
+   line-height: 1.5;
+   font-size: 18px;
+   text-align: justify;
+   color: #050503;
+   margin-bottom: 20px;
+}
+h2{
+   text-align: left;
+   font-size: 24px;
+   color:#050503;
+   font-weight: 700;
+}
+h3{
+   text-align: left;
+   font-size: 20px;
+   color:#050503;
+   font-weight: 700;
+}
+
+/*Grid Styling*/
+.grid{
+   /*Set width, margin, border properties, background color, and grid properties */
+   display: grid;
+   width: 100%;
+   margin: auto;
+   grid-template-columns: 50% 50%;
+   /* justify-content:space-evenly; */
+   /* border: 2px solid darkgreen; */
+   border-radius: 10px;
+   background-color: #ffffff;
+   row-gap: -100px;
+   justify-content: center;
+   align-items: center;
+}
+.grid .introduction{
+   grid-row-start: 1;
+   grid-row-end: span 1;
+   grid-column-start: 1;
+   grid-column-end: span 2;
+}
+.section1, .section2, .section3, .section4, .section5{
+   grid-column: 1/span 2;
+   justify-content: center;
+   align-items: center;
+}
+.section1{
+   grid-row: 2/span 1;
+}
+.section2{
+   grid-row: 3/span 1;
+}
+.section3{
+   grid-row: 4/span 1;
+}
+.section4{
+   grid-row: 5/span 1;
+}
+.section5{
+   grid-row: 6/span 1;
+}
+.introduction img{
+   max-height: auto;
+   align-items: center;
+   border-radius: 0px;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 100%;
+}
+.section1 img, .section2 img, .section3 img, .section4 img, .section5 img{
+   max-height: auto;
+   align-items: center;
+   border-radius: 20px;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 100%;
+}
+.section1-description, .section2-description, .section3-description, .section4-description, .section5-description {
+   padding: 30px;
+   border-radius: 50px 0px 10px 10px;
+   background-color: #EFCBAB;
+   z-index: 1;
+   position: relative;
+   top: -75px;
+}
+
+
+/*List Styling*/
+
+ol {
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-size: 18px;
+   color: #050503;
+   margin-top: 15px;
+   margin-bottom: 15px;
+   padding-left: 30px; /* This provides some indentation for the list*/
+   list-style-type: decimal;
+}
+li {
+   font-weight: 400;
+   line-height: 1.5;
+   margin-bottom: 8px; /* This gives a slight gap between list items for better readability*/
+   text-align: justify;
+   list-style-type:lower-roman;
+   margin-left: 3.5%;
+   margin-right: 3.5%;
+}
+
+/*Travel Styling*/
+
+.venue-description{
+   padding: 30px;
+   border-radius: 50px 50px 10px 10px;
+   background: linear-gradient(180deg, #13111E 0%, #16253C 118.99%);
+   z-index: 1;
+   position: relative;
+   top: -75px;
+}
+.venue-description h2 {
+   color: #C3D3E2;
+   text-align: left;
+   font-size: 24px;
+   font-weight: 700;
+}
+
+.venue-description h3{
+   text-align: left;
+   font-size: 20px;
+   color:#C3D3E2;
+   font-weight: 700;
+}
+
+.venue-description p{
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-weight: 400;
+   line-height: 1.5;
+   font-size: 18px;
+   text-align: justify;
+   color: #C3D3E2;
+}
+
+
+
+/*Footer Styling*/
+footer {
+   margin: 0px;
+   background-color: #360000;
+   padding: 20px;
+   text-align: center;
+}
+footer p{
+   color: #FFF;
+   text-align: center;
+   font-family:Georgia, 'Times New Roman', Times, serif;
+   font-size: 18px;
+   font-weight: 400;
+   line-height: normal;
+}
+
+
+/*Reduced Motion*/
+@media screen and (prefers-reduced-motion: reduce){
+   html{
+       scroll-behavior: auto; /* Removes scroll animation */
+   }
+ 
+   .skip a{
+     -webkit-transition: none; /* sets to default setting */
+     transition: none;        /* sets to default setting */
+    }
+ 
+   /*Turn off parallax*/
+   header{
+     background-attachment: initial;
+   }
+ }
+
+
+/*
+@media (min-width: 800px) {
+Step 9: Write the selector/rule property to style the nav element
+   nav {
+     text-align: right;
+     padding: 30px 0px 30px 0px;
+     padding: 30px 0px;
+   }
+
+   .grid {
+      display: grid;
+      grid-template-columns: 50px auto 500px auto 50px;
+    }
+
+   .about,
+   .clients,
+   .method-image,
+   .contact-image {
+    grid-column: 3 / span 2;
+  }
+
+  .method,
+  .contact,
+  .about-image,
+  .clients-image {
+    grid-column: 2 / span 2;
+  }
+
+  .text-block {
+   max-height: 250px;
+   overflow: auto;
+ }
+} */
