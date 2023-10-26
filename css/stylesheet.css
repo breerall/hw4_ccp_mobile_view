@@ -151,7 +151,7 @@ h3{
    grid-row: 6/span 1;
 }
 .introduction img{
-   max-height: auto;
+   height: auto;
    align-items: center;
    border-radius: 0px;
    display: block;
@@ -160,7 +160,7 @@ h3{
    width: 100%;
 }
 .section1 img, .section2 img, .section3 img, .section4 img, .section5 img{
-   max-height: auto;
+   height: auto;
    align-items: center;
    border-radius: 20px;
    display: block;
@@ -249,6 +249,25 @@ footer p{
    font-weight: 400;
    line-height: normal;
 }
+
+
+/*Reduced Motion*/
+@media screen and (prefers-reduced-motion: reduce){
+   html{
+       scroll-behavior: auto; /* Removes scroll animation */
+   }
+ 
+   .skip a{
+     -webkit-transition: none; /* sets to default setting */
+     transition: none;        /* sets to default setting */
+    }
+ 
+   /*Turn off parallax*/
+   header{
+     background-attachment: initial;
+   }
+ }
+
 
 /*
 @media (min-width: 800px) {
